@@ -54,9 +54,14 @@ app.get('/authors',function(req,res){
 
 app.get('/setcookie',function(req,res){
 
-	res.cookie('name', 'George', { expires: new Date(Date.now() + 60000), httpOnly: true });
-	res.cookie('age', '21', { expires: new Date(Date.now() + 60000), httpOnly: true });
-	res.send("The Cookie is Set");
+	if(req.cookies.name === undefined){
+		res.cookie('name', 'George', { expires: new Date(Date.now() + 60000), httpOnly: true });
+		res.cookie('age', '21', { expires: new Date(Date.now() + 60000), httpOnly: true });
+		res.send("The Cookie is Set");
+	}
+	else{
+		res.send("Cookies has already been set");
+	}
 	
 });
 app.get('/getcookies',function(req,res){
