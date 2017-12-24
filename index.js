@@ -55,8 +55,8 @@ app.get('/authors',function(req,res){
 app.get('/setcookie',function(req,res){
 
 	if(req.cookies.name === undefined){
-		res.cookie('name', 'George', { expires: new Date(Date.now() + 60000), httpOnly: true });
-		res.cookie('age', '21', { expires: new Date(Date.now() + 60000), httpOnly: true });
+		res.cookie('name', 'George', { expires: new Date(Date.now() + 3600000), httpOnly: true });
+		res.cookie('age', '21', { expires: new Date(Date.now() + 3600000), httpOnly: true });
 		res.send("The Cookie is Set");
 	}
 	else{
