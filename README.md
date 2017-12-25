@@ -1,33 +1,33 @@
 Project-Hasura-Task1
 
-This is a demo application which allows the implementation of a few of the most basic functionalities available on Express-Nodejs. This application handles various requests made by clients and performs various functions, including providing the client with appropriate responses.
+	This is a demo application which allows the implementation of a few of the most basic functionalities available on Express-Nodejs. This application handles various requests made by clients and performs various functions, including providing the client with appropriate responses.
 
 Requirements
 
-	1) Nodejs
-	2) Web Browser
+		1) Nodejs
+		2) Web Browser
 
 Install
 
-	$ git clone https://github.com/george-martin/Project-Hasura-Task1.git
- 
-Now you must enter the project directory
+		$ git clone https://github.com/george-martin/Project-Hasura-Task1.git
 
-	$ cd Project-Hasura-Task1
-	
-	$ npm install
+	Now you must enter the project directory
 
-NOTE: the above command facilitates the inclusion of all the dependencies metioned in package.json
+		$ cd Project-Hasura-Task1
+
+		$ npm install
+
+	NOTE: the above command facilitates the inclusion of all the dependencies metioned in package.json
 
 
-To get the server to start listening for requests
+	To get the server to start listening for requests
 
-	$ node index.js
+		$ node index.js
 
 Instructions
 
 		On visiting 
-	
+
 			http://localhost:8080/ 
 
 			a simple string "Hello World -George" is displayed.
@@ -49,7 +49,7 @@ Instructions
 			renders a simple html page
 
 			http://localhost:8080/image
-	
+
 			renders an image
 
 			http://localhost:8080/robots.txt
